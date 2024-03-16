@@ -1,15 +1,16 @@
 import { HStack, VStack } from "@chakra-ui/react";
 import React from "react";
+import About from "./About";
 
 const Yellow = () => {
   return (
-    <div className="w-full  rounded-tl-3xl rounded-tr-3xl pl-10 py-20 text-[#212121] bg-[#CDEA68]">
+    <div className="w-full   rounded-tl-3xl rounded-tr-3xl pl-10 py-20 text-[#212121] bg-[#CDEA68]">
       <h1 className="leading-none font-['Neue_Montreal_Regular']  text-[4vw]">
         Ochi is a strategic partner for fast-grow­ing tech businesses that need
         to raise funds, sell prod­ucts, ex­plain com­plex ideas, and hire great
         peo­ple.
       </h1>
-      <HStack  alignItems={"flex-start"} className="border-t-2 font-['Neue_Montreal_Regular']  justify-between border-t-zinc-600   py-3 mt-7">
+      <HStack  alignItems={"flex-start"} className="border-t-2 rounded-tl-2xl rounded-tr-3xl  font-['Neue_Montreal_Regular']  justify-between border-t-zinc-600   py-3 mt-7">
         <p className="w-[23vw]">What you can expect:</p>
     <VStack spacing={10}>
    
@@ -23,12 +24,12 @@ const Yellow = () => {
           what makes your message clear, convincing, and captivating
         </p>
     </VStack>
-       <div>
+       <div className="mt-10 mr-7">
         <p className="mb-4"> S:</p>
        {["Instagram","Behance","Facebook","Linkedin"].map((it,i)=>{
        return <ul>  
-        <li>
-        <a  href="">{it}</a>
+        <li >
+        <a className="leading-7" href="">{it}</a>
         </li>
         
         </ul> 
@@ -42,6 +43,7 @@ const Yellow = () => {
 
         
       </HStack>
+      <About/>
     </div>
   );
 };

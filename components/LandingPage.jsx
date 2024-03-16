@@ -6,7 +6,7 @@ import{motion} from "framer-motion"
 function LandingPage() {
   return (
     <div className="h-screen w-full bg-white pt-1">
-      <div className="textstructure mt-36 px-20">
+      <div  className="textstructure mt-36 px-20">
         {["We Create", "Eye Opening", "Presentation"].map((item, index) => {
           return  <div className="masker">
             <div className="w-fit flex items-center">
